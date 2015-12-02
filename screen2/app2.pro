@@ -19,3 +19,9 @@ SOURCES += main.cpp\
 HEADERS  += screen2.h
 
 FORMS    += screen2.ui
+
+# deployment on Linux
+unix {
+    target.path = /usr/bin/
+    INSTALLS += target \
+}
